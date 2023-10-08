@@ -1,13 +1,40 @@
-#footer{
+#footer {
   background-color: white;
 
 }
-#hcontact{
+
+#hcontact {
   color: #BF177B;
-  border-bottom:1px solid ;
+  border-bottom: 5px solid #F97D24 ;
 }
-#ContactContent{
-  
+
+#ContactContent {
+
   align-items: center;
   justify-content: center;
+}
+
+#bime {
+  background-color: #E43D4E;
+  color: white;
+
+}
+
+#bima {
+  background-color: #F97D24;
+  color: white;
+}
+
+#biph {
+  background-color: #BD076E;
+  color: white;
+}
+#hmap{
+  color: #123884;
+}
+#hemail{
+  color: #123884;
+}
+#hphone{
+  color: #123884;
 }

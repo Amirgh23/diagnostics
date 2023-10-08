@@ -8,7 +8,7 @@ const ContactUs = () => {
     <footer  className="rounded-top-5" id="footer">
       <div id="ContactContent" className=" pt-5 ps-5 pe-5">
         <h1  id="hcontact" className="pb-4" align="center">Contact</h1>
-        <p className="m-4" align="center" >
+        <p className="m-5" align="center" >
           Our consultants in artificial intelligence wear many different hats.
           Our services and solutions are designed to meet the specific needs of
           our customers. Our goal is to be a strategic partner trusted and
@@ -23,13 +23,13 @@ const ContactUs = () => {
           researchers to name a few.
         </p>
         <Container>
-          <Row xs={ 1 } md={ 3 } className='g-3' align={ "center" }>
-            <Col>
-              <div>
-                <h2>
-                  <BiMapPin />
+          <Row xs={ 1 } md={ 3 } className='g-3 pb-5' align={ "center" }>
+            <Col >
+              <div >
+                <h2 >
+                  <BiMapPin id="bima" className="w-25 h-25  rounded-circle p-2 " />
                 </h2>
-                <h2>
+                <h2 id="hmap" className="p-3 ">
                   Our Address
                 </h2>
                 <h5>6421 N Tierra de las Catalinas, Tucson,AZ 85718</h5>
@@ -38,9 +38,9 @@ const ContactUs = () => {
             <Col>
               <div>
                 <h2>
-                  <BiMessageSquareDots />
+                  <BiMessageSquareDots id="bime" className="w-25 h-25  rounded-circle p-2" />
                 </h2>
-                <h2>
+                <h2 id="hemail" className="p-3 ">
                   Email Us
                 </h2>
                 <h5>info@aiandhealth.net</h5>
@@ -48,10 +48,10 @@ const ContactUs = () => {
             </Col>
             <Col>
               <div>
-                <h2>
-                  <BiPhone />
+                <h2 >
+                  <BiPhone id="biph" className="w-25 h-25  rounded-circle p-2" />
                 </h2>
-                <h2>
+                <h2 id="hphone" className="p-3">
                   Call Us
                 </h2>
                 <h5>+1-720-525-5826</h5>
