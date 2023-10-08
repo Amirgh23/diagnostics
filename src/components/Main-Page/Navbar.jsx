@@ -1,4 +1,5 @@
 import { Navbar as NavbarBs, Button } from "react-bootstrap";
+import "./Navbar.css"
 import {
   BiSolidHomeHeart,
   BiSolidContact,
@@ -11,8 +12,8 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <NavbarBs
-      style={ { position: "sticky", top: "0", zIndex: '2', border: '1px solid', backgroundColor: 'white' } }
-      className="    shadow   rounded-pill my-5"
+      style={ { position: "sticky", top: "0", zIndex: '2', backgroundColor: 'white', boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" } }
+      className="       rounded-pill my-5"
     >
       <NavbarBs className="justify-content-start">
         <img
@@ -24,25 +25,23 @@ const Navbar = () => {
       </NavbarBs>
       <NavbarBs.Collapse className="justify-content-end  mx-2">
         <Link to='/'>
-          <Button
-            variant="btn rounded-4 btn-outline-warning me-2  shadow"
-            className="text-black"
+          <Button id="but1"
+            variant="btn rounded-5 me-2  shadow"
           >
             <BiSolidHomeHeart className="mx-2"></BiSolidHomeHeart>Home
           </Button>
         </Link>
         <Link to='/Aplications'>
-          <Button
-            variant="btn rounded-4  btn-outline-primary me-2 shadow"
-            className="text-black"
+          <Button id="but2"
+            variant="btn rounded-5  me-2 shadow"
           >
             <BiCategoryAlt className=" mx-2"></BiCategoryAlt>Aplications
           </Button>
         </Link>
         <Link to='/ContactUs'>
-          <Button
-            variant="btn rounded-4 btn-outline-primary me-2 shadow"
-            className="text-black"
+          <Button id="but3"
+            variant="btn rounded-5  me-2 shadow"
+            
           >
             <BiSolidContact className="mx-2"></BiSolidContact>Contact Us
           </Button>

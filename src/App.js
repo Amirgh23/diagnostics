@@ -5,6 +5,7 @@ import { Container } from 'react-bootstrap';
 import Aplications from './components/Main-Page/Aplications'
 import './App.css';
 import Board from './components/Main-Page/Board'
+import ContactUs from './components/Main-Page/ContactUs'
 import Endo from './components/Endo-Page/Endo';
 import Hematology from './components/Hematology-Page/Hematology';
 import Infant from './components/Infant-Page/Infant';
@@ -12,18 +13,21 @@ import Medicaltoxicology from './components/Medicaltoxicology-Page/Medicaltoxico
 import NewNephrology from './components/NewNephrology-Page/NewNephrology';
 import Poisoningsymptoms from './components/Poisoningsymptoms-Page/Poisoningsymptoms';
 import Rheumatology from './components/Rheumatology-Page/Rheumatology';
+
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={
-            <Container style={ { } }>
+            <Container style={ {} }>
               <Navbar ></Navbar>
               <Board></Board>
               <Aplications ></Aplications>
-            </Container > }/ >
-          
+
+              <ContactUs></ContactUs>
+            </Container > } />
+
           <Route path='/Endo' element={ <Endo /> } />
           <Route path='/Hematology' element={ <Hematology /> } />
           <Route path='/Infant' element={ <Infant /> } />
