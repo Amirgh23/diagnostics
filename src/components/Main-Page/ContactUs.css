@@ -19,15 +19,31 @@
   color: white;
 
 }
+#bime:hover {
+  background-color: #E43D4E;
+  color: #123884;
+  transition: all 0.3s;
+
+}
 
 #bima {
   background-color: #F97D24;
   color: white;
+  transition: all 0.3s;
+}
+#bima:hover {
+  background-color: #F97D24;
+  color: #123884;
 }
 
 #biph {
   background-color: #BD076E;
   color: white;
+  transition: all 0.3s;
+}
+#biph:hover  {
+  background-color: #BD076E;
+  color: #123884;
 }
 #hmap{
   color: #123884;

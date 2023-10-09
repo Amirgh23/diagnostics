@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <NavbarBs
       style={ { position: "sticky", top: "0", zIndex: '2', backgroundColor: 'white', boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" } }
-      className="       rounded-pill my-5"
+      className="       rounded-pill my-3"
     >
       <NavbarBs className="justify-content-start">
         <img

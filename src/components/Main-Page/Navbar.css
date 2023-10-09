@@ -1,6 +1,7 @@
 #but3{
   color: #BA0470;
-  border: 2px solid rgba(249,130,33,1)
+  border: 2px solid rgba(249,130,33,1);
+  transition: all 0.6s;
 }
 #but3:hover{
   color: white;
@@ -10,7 +11,8 @@
 }
 #but2{
   color: rgba(249,130,33,1);
-  border: 2px solid #BA0470
+  border: 2px solid #BA0470;
+  transition: all 0.6s;
 }
 #but2:hover{
   color: white;
@@ -20,7 +22,8 @@
 }
 #but1{
   color: #BA0470;
-  border: 2px solid rgba(249,130,33,1)
+  border: 2px solid rgba(249,130,33,1);
+  transition: all 0.6s;
 }
 #but1:hover{
   color: white;

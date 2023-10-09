@@ -28,7 +28,7 @@ const Aplications = () => {
               <Card.Body>
                 <Card.Title>{ `${Application.title}` }</Card.Title>
                 <Card.Text>{ `${Application.info}` }</Card.Text>
-                <button id="butapp" className='btn  rounded-5  mx-3' >
+                <button id="butapp" className='btn  rounded-5  mx-3 shadow' >
                   Go to App<BiSolidNavigation className="mx-1 " />
                 </button>
               </Card.Body>
@@ -42,23 +42,3 @@ const Aplications = () => {
 
 export default Aplications
 
-// import {Col , Row} from 'react-bootstrap'
-// const Aplications =()=>{
-//   return(
-//     <Row  xs={1} md={4} className='g-4'>
-//       <Col align='center'>
-//         <h3>Aplication</h3>
-//       </Col>
-//       <Col align='center'>
-//         <h3>Aplication</h3>
-//       </Col>
-//       <Col align='center'>
-//         <h3>Aplication</h3>
-//       </Col>
-//       <Col align='center'>
-//         <h3>Aplication</h3>
-//       </Col>
-//     </Row>
-//   )
-// }
-// export default Aplications

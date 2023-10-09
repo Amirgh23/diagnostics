@@ -1,7 +1,7 @@
 #diag{
   color: #BA0470 ;
   text-shadow: 0 0 15px orangered;
-  animation: diag 1s ease-in-out infinite alternate;
+  animation: diag 0.4s ease-in-out infinite alternate;
 }
 @keyframes diag {
   from {

@@ -1,4 +1,4 @@
-const Application = [
+let Application = [
   {
     title: "Endo",
     id: 1,
