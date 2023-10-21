@@ -42,7 +42,7 @@ const App = () => {
   return (
     <appContext.Provider value={ {
       app,
-      setApp 
+      setApp
     } }>
       <>
         <BrowserRouter>

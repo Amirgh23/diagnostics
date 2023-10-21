@@ -8,8 +8,8 @@ import "./Hematology.css"
 const Hematology = () => {
   return (
     <>
-      <header align="center" style={{}}>
-        <h1 style={ { display: "inline-block" , color:"white" , background: "rgba(0, 0, 0, 0.60)"} } className='p-4 m-3 rounded-pill'>Hematology Application</h1>
+      <header align="center" style={ {} }>
+        <h1 style={ { display: "inline-block", color: "white", background: "rgba(0, 0, 0, 0.60)" } } className='p-4 m-3 rounded-pill'>Hematology Application</h1>
         <Row xs={ 1 } md={ 3 } className='g-3 m-5'>
           <Col>
             <Card align='center' className='bg-light rounded-4  shadow'>

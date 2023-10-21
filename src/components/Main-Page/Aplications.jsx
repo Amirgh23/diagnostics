@@ -16,7 +16,9 @@ import { appContext } from '../../context/appDataContaxt'
 
 const Aplications = () => {
 
-const {app , setApp} = useContext(appContext)
+  const { app
+    //  , setApp
+  } = useContext(appContext)
 
 
   return (
