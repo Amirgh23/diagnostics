@@ -16,59 +16,82 @@ import Medicaltoxicology from './components/Medicaltoxicology-Page/Medicaltoxico
 import NewNephrology from './components/NewNephrology-Page/NewNephrology'
 import Poisoningsymptoms from './components/Poisoningsymptoms-Page/Poisoningsymptoms'
 import Rheumatology from './components/Rheumatology-Page/Rheumatology'
+import Admin from './components/Admin-Page/Admin'
+import { appContext } from './context/appDataContaxt'
+
 
 const App = () => {
-  const [getApp, setApp] = useState([])
+  const [app, setApp] = useState([])
   useEffect(() => {
     const fetchData = async () => {
       try {
         // set loading
-        const { data: appData } = await axios.get("http://127.0.0.1:8000/api/v1/health/related-disease/list");
+        const { data: appData } = await axios.get(
+          'http://0.0.0.0:8000/api/v1/health/related-disease/list'
+        )
         setApp(appData)
 
         //set loading false
-      }
-      catch (err) {
+      } catch (err) {
         console.log(err.message)
         //set loading false
       }
     }
-    fetchData();
+    fetchData()
   }, [])
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path='/'
-            element={
-              <Container style={ {} }>
-                <Navbar></Navbar>
-                <Board></Board>
-                <Aplications getApp={getApp}></Aplications>
-                <ContactUs></ContactUs>
-              </Container>
-            }
-          />
+    <appContext.Provider value={ {
+      app,
+      setApp 
+    } }>
+      <>
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path='/'
+              element={
+                <Container style={ {} }>
+                  <Navbar></Navbar>
+                  <Board></Board>
+                  <Aplications ></Aplications>
+                  <ContactUs></ContactUs>
+                </Container>
+              }
+            />
 
-          <Route path='/LogIn' element={
-            <Container style={ {} }>
-              <Navbar></Navbar>
-              <LogIn></LogIn>
-            </Container>
-
-          } />
-          <Route path='/Endo' element={ <Endo /> } />
-          <Route path='/Hematology' element={ <Hematology /> } />
-          <Route path='/Infant' element={ <Infant /> } />
-          <Route path='/Medicaltoxicology' element={ <Medicaltoxicology /> } />
-          <Route path='/NewNephrology' element={ <NewNephrology /> } />
-          <Route path='/Poisoningsymptoms' element={ <Poisoningsymptoms /> } />
-          <Route path='/Rheumatology' element={ <Rheumatology /> } />
-          <Route path='*' element={ <p>page not found</p> } />
-        </Routes>
-      </BrowserRouter>
-    </>
+            <Route
+              path='/LogIn'
+              element={
+                <Container style={ {} }>
+                  <Navbar></Navbar>
+                  <br />
+                  <br />
+                  <LogIn></LogIn>
+                </Container>
+              }
+            />
+            <Route path='/Endo' element={ <Endo /> } />
+            <Route path='/Admin' element={ <Admin /> } />
+            <Route
+              path='/Hematology'
+              element={
+                <Container>
+                  <Navbar></Navbar>
+                  <Hematology />
+                  <ContactUs></ContactUs>
+                </Container>
+              }
+            />
+            <Route path='/Infant' element={ <Infant /> } />
+            <Route path='/Medicaltoxicology' element={ <Medicaltoxicology /> } />
+            <Route path='/NewNephrology' element={ <NewNephrology /> } />
+            <Route path='/Poisoningsymptoms' element={ <Poisoningsymptoms /> } />
+            <Route path='/Rheumatology' element={ <Rheumatology /> } />
+            <Route path='*' element={ <p>page not found</p> } />
+          </Routes>
+        </BrowserRouter>
+      </>
+    </appContext.Provider>
   )
 }
 

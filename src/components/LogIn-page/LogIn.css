@@ -1,3 +1,61 @@
-/* #loginform{
+#loginform {
+  justify-content: center;
+}
 
-} */
+#form {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+#btnlog {
+  background-color: #ba0470;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  transition: all 0.6s;
+}
+
+#btnlog:hover {
+  color: black;
+  background: rgb(186, 4, 112);
+  background: radial-gradient(circle,
+      rgba(186, 4, 112, 1) 50%,
+      rgba(249, 130, 33, 1) 100%);
+  border: 2px solid black;
+}
+
+#userinput {
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 50%;
+  transition: all 0.8s;
+
+}
+
+#userinput:focus {
+
+  border: 2px solid;
+  color: aliceblue;
+  width: 75%;
+  border-radius: 20px;
+}
+
+#passinput {
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 50%;
+  transition: all 0.8s;
+}
+
+#passinput:focus {
+  width: 75%;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+label {
+  color: #F98221;
+}
+
+input {
+  display: block;
+}

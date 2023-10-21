@@ -1,0 +1,15 @@
+#butapp {
+  color: rgba(186, 4, 112, 1);
+  background: white;
+  border: 2px solid white;
+  transition: all 0.6s;
+  
+  }
+
+#butapp:hover {
+  color: white;
+  border: 2px solid white;
+  background: rgb(186, 4, 112);
+  background: radial-gradient(circle, rgba(186, 4, 112, 1) 50%, rgba(249, 130, 33, 1) 100%);
+
+}

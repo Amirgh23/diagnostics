@@ -8,10 +8,15 @@ import { BiSolidNavigation } from 'react-icons/bi'
 import './Application.css'
 
 
+import { useContext } from 'react'
+import { appContext } from '../../context/appDataContaxt'
 
-const Aplications = ({ getApp }) => {
 
 
+
+const Aplications = () => {
+
+const {app , setApp} = useContext(appContext)
 
 
   return (
@@ -24,7 +29,7 @@ const Aplications = ({ getApp }) => {
       className=' p-5 rounded-5 mb-5 shadow-lg'
     >
       <Row xs={ 1 } md={ 3 } className='g-4'>
-        { getApp.map(getApp => (
+        { app.map(getApp => (
 
           <Col className='' key={ getApp.name }>
             <Card align='center' className='bg-light rounded-4  shadow'>
