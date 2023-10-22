@@ -1,33 +1,52 @@
-#but3{
+#but3 {
   color: #BA0470;
-  border: 2px solid rgba(249,130,33,1);
+  border: 2px solid rgba(249, 130, 33, 1);
   transition: all 0.6s;
 }
-#but3:hover{
+
+#but3:hover {
   color: white;
-  background: rgb(186,4,112);
-    background: radial-gradient(circle, rgba(186,4,112,1) 50%, rgba(249,130,33,1) 100%);
-    border: 2px solid black ;
+  background: rgb(186, 4, 112);
+  background: radial-gradient(circle, rgba(186, 4, 112, 1) 50%, rgba(249, 130, 33, 1) 100%);
+  border: 2px solid black;
 }
-#but2{
-  color: rgba(249,130,33,1);
+
+#but2 {
+  color: rgba(249, 130, 33, 1);
   border: 2px solid #BA0470;
   transition: all 0.6s;
 }
-#but2:hover{
+
+#but2:hover {
   color: white;
-  background: rgb(186,4,112);
-    background: radial-gradient(circle, rgba(186,4,112,1) 50%, rgba(249,130,33,1) 100%);
-    border: 2px solid black ;
+  background: rgb(186, 4, 112);
+  background: radial-gradient(circle, rgba(186, 4, 112, 1) 50%, rgba(249, 130, 33, 1) 100%);
+  border: 2px solid black;
 }
-#but1{
+
+#but4 {
+  color:white ;
+  background-color: rgb(186, 4, 112) ;
+  border: 3px solid black;
+  transition: all 0.8s;
+}
+
+#but4:hover {
+  color: white;
+  background: rgb(186, 4, 112);
+  background: radial-gradient(circle, rgba(186, 4, 112, 1) 50%, rgba(249, 130, 33, 1) 100%);
+  border: 3px solid black;
+}
+
+#but1 {
   color: #BA0470;
-  border: 2px solid rgba(249,130,33,1);
+  border: 2px solid rgba(249, 130, 33, 1);
   transition: all 0.6s;
 }
-#but1:hover{
+
+#but1:hover {
   color: white;
-  background: rgb(186,4,112);
-    background: radial-gradient(circle, rgba(186,4,112,1) 50%, rgba(249,130,33,1) 100%);
-    border: 2px solid black ;
+  background: rgb(186, 4, 112);
+  background: radial-gradient(circle, rgba(186, 4, 112, 1) 50%, rgba(249, 130, 33, 1) 100%);
+  border: 2px solid black;
 }

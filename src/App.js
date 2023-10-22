@@ -18,10 +18,12 @@ import Poisoningsymptoms from './components/Poisoningsymptoms-Page/Poisoningsymp
 import Rheumatology from './components/Rheumatology-Page/Rheumatology'
 import Admin from './components/Admin-Page/Admin'
 import { appContext } from './context/appDataContaxt'
+import { themeContext } from './context/themeContext';
 
 
 const App = () => {
   const [app, setApp] = useState([])
+  const [theme, setTheme] = useState("white")
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -40,6 +42,7 @@ const App = () => {
     fetchData()
   }, [])
   return (
+    <themeContext.Provider value={{theme , setTheme}}>
     <appContext.Provider value={ {
       app,
       setApp
@@ -92,6 +95,7 @@ const App = () => {
         </BrowserRouter>
       </>
     </appContext.Provider>
+    </themeContext.Provider>
   )
 }
 
