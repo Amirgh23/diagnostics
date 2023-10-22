@@ -9,13 +9,13 @@
 
 #btnlog {
   color: black;
-width: 15%;
+width: 20%;
   background: rgb(186, 4, 112);
   background: radial-gradient(circle,
       rgba(186, 4, 112, 1) 50%,
       rgba(249, 130, 33, 1) 100%);
   border: 2px solid black;
-  transition: all 0.6s;
+  transition: all 0.2s;
 }
 
 #btnlog:hover {
@@ -26,21 +26,36 @@ width: 15%;
   width: 25%;
 
 }
+#btnlog:active {
+  color: black;
+
+  border: 2px solid black;
+  width: 25%;
+
+}
 
 #userinput {
   border: 2px solid gray;
 
   border-radius: 20px;
   width: 50%;
-  transition: all 0.8s;
+  transition: all 0.5s;
 
 }
 
+#userinput:hover {
+  border: 2px solid #ba0470;
+  color: black;
+  background-color: white;
+  width: 60%;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
 #userinput:focus {
   border: 2px solid black;
-  color: black;
-  background-color: #F98221;
-  width: 65%;
+  color: white;
+  background-color: #ba0470;
+  width: 70%;
   border-radius: 20px;
 }
 
@@ -48,13 +63,22 @@ width: 15%;
   border: 2px solid gray;
   border-radius: 20px;
   width: 50%;
-  transition: all 0.8s;
+  transition: all 0.5s;
 }
 
+#passinput:hover {
+  border: 2px solid #FFA500;
+  width: 60%;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  transition: all 0.5s;
+
+}
 #passinput:focus {
+  background-color: #FFA500;
   border: 2px solid black;
-  width: 65%;
-  background-color: #F98221;
+  width: 70%;
   color: black;
   border-radius: 20px;
 
