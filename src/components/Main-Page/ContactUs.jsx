@@ -6,12 +6,14 @@ import { useContext } from "react";
 import { themeContext } from "../../context/themeContext";
 import "./ContactUs.css"
 const ContactUs = () => {
-  const { theme, setTheme } = useContext(themeContext)
+  const { theme
+    // , setTheme 
+  } = useContext(themeContext)
   return (
     
-    <footer  className="rounded-top-5" id="footer" style={{backgroundColor: `${theme}`}}>
+    <footer  className="rounded-top-5" id="footer" style={{backgroundColor: `${theme}` , transition: 'all 0.6s'}}>
       <div id="ContactContent" className=" pt-5 ps-5 pe-5">
-        <h1  id="hcontact" className="pb-4" align="center">Contact</h1>
+        <h1  id="hcontact" className="pb-4" align="center">Contact Us</h1>
         <p className="m-5" align="center" style={theme === "white" ? {color :"#282528"} :{color : "white"}} >
           Our consultants in artificial intelligence wear many different hats.
           Our services and solutions are designed to meet the specific needs of
@@ -27,11 +29,11 @@ const ContactUs = () => {
           researchers to name a few.
         </p>
         <Container>
-          <Row xs={ 1 } md={ 3 } className='g-3 pb-5' align={ "center" }>
+          <Row xs={ 1 } md={ 2 } className='g-3 pb-5' align={ "center" }>
             <Col >
               <div >
                 <h2 >
-                  <BiMapPin id="bima" className="w-25 h-25  rounded-circle p-2 " />
+                  <BiMapPin id="bima"  className="w-25 h-25  rounded-circle p-2 " />
                 </h2>
                 <h2 id="hmap"  className="p-3 " >
                   Our Address
@@ -50,17 +52,7 @@ const ContactUs = () => {
                 <h5 style={theme === "white" ? {color :"#282528"} :{color : "#F98221"}}>info@aiandhealth.net</h5>
               </div>
             </Col>
-            <Col>
-              <div>
-                <h2 >
-                  <BiPhone id="biph" className="w-25 h-25  rounded-circle p-2" />
-                </h2>
-                <h2 id="hphone" className="p-3">
-                  Call Us
-                </h2>
-                <h5 style={theme === "white" ? {color :"#282528"} :{color : "#F98221"}}>+1-720-525-5826</h5>
-              </div>
-            </Col>
+
           </Row>
         </Container>
       </div>

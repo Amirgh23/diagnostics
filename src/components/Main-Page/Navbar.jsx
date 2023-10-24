@@ -4,14 +4,13 @@ import {
   BiSolidHomeHeart,
   BiSolidContact,
   BiCategoryAlt,
-  BiSun,
-  BiMoon
+  BiSolidSun,
+  BiSolidMoon
 } from 'react-icons/bi'
 import Logo from '../../pic/FD.png'
 import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { themeContext } from '../../context/themeContext'
-
 
 const Navbar = () => {
   const { theme, setTheme } = useContext(themeContext)
@@ -34,7 +33,8 @@ const Navbar = () => {
               zIndex: '2',
               backgroundColor: 'white',
               boxShadow:
-                '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
+                '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+              transition: 'all 0.6s'
             }
           : {
               position: 'sticky',
@@ -43,10 +43,11 @@ const Navbar = () => {
               zIndex: '2',
               backgroundColor: '#282528',
               boxShadow:
-                '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
+                '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+              transition: 'all 0.6s'
             }
       }
-      className='       rounded-pill my-3'
+      className=' rounded-pill my-3'
     >
       <NavbarBs className='justify-content-start'>
         <img
@@ -58,13 +59,17 @@ const Navbar = () => {
       </NavbarBs>
       <NavbarBs.Collapse className='justify-content-end '>
         <Link to='/'>
-          <Button id='but1' variant='btn rounded-5 mx-1   shadow'>
+          <Button
+            // id={theme === 'white' ? 'but1' : 'but2'}
+            id='but1'
+            variant='btn rounded-5 mx-1   shadow'
+          >
             <BiSolidHomeHeart className='mx-1'></BiSolidHomeHeart>Home
           </Button>
         </Link>
         <Link to='/Aplications'>
           <Button id='but2' variant='btn rounded-5 mx-1    shadow'>
-            <BiCategoryAlt className=' mx-1'></BiCategoryAlt>Aplications
+            <BiCategoryAlt className=' mx-1'></BiCategoryAlt>Applications
           </Button>
         </Link>
         <Link to='/ContactUs'>
@@ -77,9 +82,28 @@ const Navbar = () => {
           onClick={setThemeNav}
           Align='center'
           id='but4'
-          variant='btn rounded-5   m-4 shadow'
+          variant='btn rounded-pill   m-4 shadow'
+          style={
+            theme === '#282528'
+              ? {
+                  color: 'white',
+                  borderColor: '#EA6434',
+                  backgroundColor: '#EA6434',
+                  transition: 'all 0.6s'
+                }
+              : {
+                  color: '#282528',
+                  borderColor: '#282528',
+                  backgroundColor: 'rgb(186, 4, 112)',
+                  transition: 'all 0.6s'
+                }
+          }
         >
-          {theme === '#282528' ? <BiSun></BiSun> : <BiMoon></BiMoon>}
+          {theme === '#282528' ? (
+            <BiSolidSun></BiSolidSun>
+          ) : (
+            <BiSolidMoon></BiSolidMoon>
+          )}
         </Button>
       </NavbarBs.Collapse>
     </NavbarBs>
