@@ -11,7 +11,10 @@ const ContactUs = () => {
   } = useContext(themeContext)
   return (
     
-    <footer  className="rounded-top-5" id="footer" style={{backgroundColor: `${theme}` , transition: 'all 0.6s'}}>
+    <footer  className="rounded-top-5" id="footer" style={{backgroundColor: 
+    // `${theme}` 
+    "#ffffff7a"
+    , transition: 'all 0.6s'}}>
       <div id="ContactContent" className=" pt-5 ps-5 pe-5">
         <h1  id="hcontact" className="pb-4" align="center">Contact Us</h1>
         <p className="m-5" align="center" style={theme === "white" ? {color :"#282528"} :{color : "white"}} >

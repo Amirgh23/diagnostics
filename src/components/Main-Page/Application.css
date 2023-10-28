@@ -1,15 +1,26 @@
+
+
 #butapp {
-  color: rgba(186, 4, 112, 1);
-  background: white;
-  border: 2px solid white;
-  transition: all 0.6s;
-  
-  }
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #f98221;
+  color: #ffffff;
+  font-weight: Bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
 
 #butapp:hover {
-  color: white;
-  border: 2px solid white;
-  background: rgb(186, 4, 112);
-  background: radial-gradient(circle, rgba(186, 4, 112, 1) 50%, rgba(249, 130, 33, 1) 100%);
+  background-color: #C50F69;
+  box-shadow: 0 0 20px #96034cca;
+  transform: scale(1.1);
+}
 
+#butapp:active {
+  background-color: #154BB9;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
 }

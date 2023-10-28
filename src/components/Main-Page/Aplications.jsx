@@ -22,7 +22,7 @@ const Aplications = () => {
   return (
     <Container
       style={{
-        background: 'rgba(0, 0, 0, 0.45)'
+        background: '#ffffff7a'
       }}
       className=' p-5 rounded-5 mb-5 shadow-lg'
     >
@@ -33,7 +33,7 @@ const Aplications = () => {
               align='center'
               style={
                 theme === 'white'
-                  ? { backgroundColor: 'white', color: '#282528' ,transition: 'all 0.6s' }
+                  ? { backgroundColor: 'whitesmoke', color: '#282528' ,transition: 'all 0.6s' }
                   : { backgroundColor: '#282528', color: 'white' , transition: 'all 0.6s' }
               }
               className='rounded-4  shadow'
@@ -47,11 +47,8 @@ const Aplications = () => {
               <Card.Body>
                 <Card.Title>{getApp.name}</Card.Title>
                 <Card.Text>{getApp.about}</Card.Text>
-                <button id='butapp' style={
-                theme === 'white'
-                  ? { backgroundColor: 'white' }
-                  : { backgroundColor: '#282528' , borderColor: "#282528" }
-              } className='btn  rounded-5  mx-3 shadow'>
+                <button id='butapp'
+              className='btn  rounded-5  '>
                   Go to App
                   <BiSolidNavigation className='mx-1 ' />
                 </button>

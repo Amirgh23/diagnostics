@@ -31,7 +31,7 @@ const Navbar = () => {
 
               top: '0',
               zIndex: '2',
-              backgroundColor: 'white',
+              backgroundColor: '#ffffff7a',
               boxShadow:
                 '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
               transition: 'all 0.6s'
@@ -51,7 +51,7 @@ const Navbar = () => {
     >
       <NavbarBs className='justify-content-start'>
         <img
-          width={'80px'}
+          width={'90rem'}
           src={Logo}
           alt='logo ai and health'
           className='mx-5'
@@ -62,18 +62,18 @@ const Navbar = () => {
           <Button
             // id={theme === 'white' ? 'but1' : 'but2'}
             id='but1'
-            variant='btn rounded-5 mx-1   shadow'
+            variant='btn  mx-1 '
           >
             <BiSolidHomeHeart className='mx-1'></BiSolidHomeHeart>Home
           </Button>
         </Link>
         <Link to='/Aplications'>
-          <Button id='but2' variant='btn rounded-5 mx-1    shadow'>
+          <Button id='but2' variant='btn  mx-1  '>
             <BiCategoryAlt className=' mx-1'></BiCategoryAlt>Applications
           </Button>
         </Link>
         <Link to='/ContactUs'>
-          <Button id='but3' variant='btn rounded-5  mx-1   shadow'>
+          <Button id='but3' variant='btn   mx-1 '>
             <BiSolidContact className='mx-1'></BiSolidContact>Contact Us
           </Button>
         </Link>
@@ -82,22 +82,7 @@ const Navbar = () => {
           onClick={setThemeNav}
           Align='center'
           id='but4'
-          variant='btn rounded-pill   m-4 shadow'
-          style={
-            theme === '#282528'
-              ? {
-                  color: 'white',
-                  borderColor: '#EA6434',
-                  backgroundColor: '#EA6434',
-                  transition: 'all 0.6s'
-                }
-              : {
-                  color: '#282528',
-                  borderColor: '#282528',
-                  backgroundColor: 'rgb(186, 4, 112)',
-                  transition: 'all 0.6s'
-                }
-          }
+          variant='btn rounded-5   mx-4'
         >
           {theme === '#282528' ? (
             <BiSolidSun></BiSolidSun>
