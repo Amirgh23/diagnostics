@@ -1,14 +1,33 @@
-#diag{
-  color: #BA0470 ;
+#BoardD {
+  background: #282528dc;
+  transition: all 0.6s;
+}
+#BoardL {
+  background: #ffffff7a;
+  transition: all 0.6s;
+}
+#DiagL {
+  color: #ba0470;
   text-shadow: 0 0 15px orangered;
   animation: diag 0.4s ease-in-out infinite alternate;
+  color: black;
+  transition: all 0.6s;
+}
+#DiagD {
+  color: #ba0470;
+  text-shadow: 0 0 15px orangered;
+  animation: diag 0.4s ease-in-out infinite alternate;
+  color: whitesmoke;
+  transition: all 0.6s;
 }
 @keyframes diag {
   from {
-    text-shadow: 0 0 10px #BA0470, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow: 0 0 10px #ba0470, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   }
-  
+
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
-} 
+}

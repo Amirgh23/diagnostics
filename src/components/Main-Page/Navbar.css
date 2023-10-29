@@ -1,4 +1,28 @@
-#but1 {
+#NavbarL {
+  position: sticky;
+  justify-content: space-around;
+
+  top: 0;
+  z-index: 2;
+  background-color: #ffffff7a;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.6s;
+}
+#NavbarD {
+position: sticky;
+  justify-content: space-around;
+  top: 0;
+  z-index: 2;
+  background-color: #282528dc;
+  box-shadow:
+    0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.6s;
+}
+
+
+
+#but1L {
   padding: 17px 40px;
   border-radius: 50px;
   border: 0;
@@ -8,31 +32,61 @@
   text-transform: uppercase;
   font-size: 15px;
   transition: all .5s ease;
- }
- 
- #but1:hover {
+}
+
+#but1L:hover {
   letter-spacing: 3px;
   background-color: #F98221;
   color: hsl(0, 0%, 100%);
   box-shadow: #F98221 0px 7px 29px 0px;
- }
- 
- #but1:active {
+}
+
+#but1L:active {
   letter-spacing: 3px;
   background-color: #F98221;
   color: hsl(0, 0%, 100%);
   box-shadow: #F98221;
   transform: translateY(10px);
   transition: 100ms;
- }
+}
+
+
+#but1D {
+  padding: 17px 40px;
+  border-radius: 50px;
+  color: whitesmoke;
+  border: 0;
+  background-color: #282528;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .5s ease;
+}
+
+#but1D:hover {
+  letter-spacing: 3px;
+  background-color: #F98221;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #F98221 0px 7px 29px 0px;
+}
+
+#but1D:active {
+  letter-spacing: 3px;
+  background-color: #F98221;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #F98221;
+  transform: translateY(10px);
+  transition: 100ms;
+}
 
 
 
- /* but2 */
+/* but2 */
 
 
 
- #but2 {
+#but2L {
   padding: 17px 40px;
   border-radius: 50px;
   border: 0;
@@ -42,27 +96,60 @@
   text-transform: uppercase;
   font-size: 15px;
   transition: all .5s ease;
- }
- 
- #but2:hover {
+}
+
+#but2L:hover {
   letter-spacing: 3px;
   background-color: #C50F69;
   color: hsl(0, 0%, 100%);
   box-shadow: #C50F69 0px 7px 29px 0px;
- }
- 
- #but2:active {
+}
+
+#but2L:active {
   letter-spacing: 3px;
   background-color: #C50F69;
   color: hsl(0, 0%, 100%);
   box-shadow: #C50F69;
   transform: translateY(10px);
   transition: 100ms;
- }
+}
 
- /* but3 */
 
- #but3 {
+
+#but2D {
+  padding: 17px 40px;
+  border-radius: 50px;
+  color: whitesmoke;
+  border: 0;
+  background-color: #282528;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .5s ease;
+}
+
+#but2D:hover {
+  letter-spacing: 3px;
+  background-color: #C50F69;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #C50F69 0px 7px 29px 0px;
+}
+
+#but2D:active {
+  letter-spacing: 3px;
+  background-color: #C50F69;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #C50F69;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+
+
+/* but3 */
+
+#but3L {
   padding: 17px 40px;
   border-radius: 50px;
   border: 0;
@@ -72,26 +159,53 @@
   text-transform: uppercase;
   font-size: 15px;
   transition: all .5s ease;
- }
- 
- #but3:hover {
+}
+
+#but3L:hover {
   letter-spacing: 3px;
   background-color: #154bb9;
   color: hsl(0, 0%, 100%);
   box-shadow: #154bb9 0px 7px 29px 0px;
- }
- 
- #but3:active {
+}
+
+#but3L:active {
   letter-spacing: 3px;
   background-color: #154bb9;
   color: hsl(0, 0%, 100%);
   box-shadow: #154bb9;
   transform: translateY(10px);
   transition: 100ms;
- }
+}
 
+#but3D {
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  color: whitesmoke;
+  background-color: #282528;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .5s ease;
+}
 
- #but4 {
+#but3D:hover {
+  letter-spacing: 3px;
+  background-color: #154bb9;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #154bb9 0px 7px 29px 0px;
+}
+
+#but3D:active {
+  letter-spacing: 3px;
+  background-color: #154bb9;
+  color: hsl(0, 0%, 100%);
+  box-shadow: #154bb9;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+#but4 {
   position: relative;
   padding: 10px 22px;
   border-radius: 6px;

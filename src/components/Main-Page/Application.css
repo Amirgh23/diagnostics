@@ -1,24 +1,40 @@
-
-
+#AppD {
+  background-color: #282528dc;
+  transition: all 0.6s;
+}
+#AppL {
+  background-color: #ffffff7a;
+  transition: all 0.6s;
+}
+#AppcardD {
+  background-color: #282528;
+  color: white;
+  transition: all 0.6s;
+}
+#AppcardL {
+  background-color: whitesmoke;
+  color: #282528;
+  transition: all 0.6s;
+}
 #butapp {
-  padding: 10px 30px;
+  padding: 5px 10px;
   border: 0;
   border-radius: 100px;
   background-color: #f98221;
   color: #ffffff;
   font-weight: Bold;
-  transition: all 0.5s;
+  transition: all 0.6s;
   -webkit-transition: all 0.5s;
 }
 
 #butapp:hover {
-  background-color: #C50F69;
+  background-color: #c50f69;
   box-shadow: 0 0 20px #96034cca;
   transform: scale(1.1);
 }
 
 #butapp:active {
-  background-color: #154BB9;
+  background-color: #96034cca;
   transition: all 0.25s;
   -webkit-transition: all 0.25s;
   box-shadow: none;

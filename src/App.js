@@ -23,7 +23,7 @@ import { themeContext } from './context/themeContext';
 
 const App = () => {
   const [app, setApp] = useState([])
-  const [theme, setTheme] = useState("white")
+  const [theme, setTheme] = useState("#ffffff7a")
   useEffect(() => {
     const fetchData = async () => {
       try {

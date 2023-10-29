@@ -21,21 +21,15 @@ const Aplications = () => {
 
   return (
     <Container
-      style={{
-        background: '#ffffff7a'
-      }}
+id={theme==="#282528dc"?'AppD':'AppL'}
       className=' p-5 rounded-5 mb-5 shadow-lg'
     >
       <Row xs={1} md={3} className='g-4'>
         {app.map(getApp => (
           <Col className='' key={getApp.name}>
             <Card
+            id={theme==="#282528dc"?'AppcardD':'AppcardL'}
               align='center'
-              style={
-                theme === 'white'
-                  ? { backgroundColor: 'whitesmoke', color: '#282528' ,transition: 'all 0.6s' }
-                  : { backgroundColor: '#282528', color: 'white' , transition: 'all 0.6s' }
-              }
               className='rounded-4  shadow'
             >
               <Card.Img
